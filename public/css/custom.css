@@ -1,0 +1,189 @@
+.nav.side-menu>li>a {
+	text-shadow: rgba(0,0,0,.25) 0 -1px 0;
+	background: linear-gradient(#334556,#2C4257),#2A3F54;
+	box-shadow: rgba(0,0,0,.25) 0 1px 0, inset rgba(255,255,255,.16) 0 1px 0;
+}
+.nav.side-menu>li.active>a {
+	text-shadow: rgba(0, 0, 0, 0.25) 0 -1px 0;
+	background: #73879C;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+}
+.nomrgbtn{
+	margin-bottom: 0px;
+}
+
+.floatright{
+	float: right;
+}
+.redBorder{
+	border:1px solid red;
+}
+thead th{
+	text-align: center;
+	font-size: 18px;
+}
+td{
+	font-size: 16px;
+}
+.alert {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+button, .buttons, .btn, .modal-footer .btn+.btn {
+	margin-bottom: 0px;
+	margin-right: 5px; 
+}
+.alert-dismissable .close, .alert-dismissible .close {
+	position: relative;
+	top: 0px;
+	right: -10px;
+	color: white;
+	opacity: 1;
+}
+.alert i {
+	font-size: 20px;
+}
+
+#global {
+    width: 70px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    top: 50%;
+    margin-top: -30px;
+}
+
+#global .mask{
+  position:absolute;
+  border-radius:2px;
+  overflow:hidden;
+   perspective: 1000;
+  backface-visibility: hidden;
+}
+
+#global .plane{
+  background:#2e6da4;
+  width:400%;
+  height:100%;
+  position:absolute;
+  transform : translate3d(0px,0,0);
+  /*transition: all 0.8s ease; */
+  z-index:100;
+  perspective: 1000;
+  backface-visibility: hidden;
+  
+}
+ 
+#global .animation{
+  transition: all 0.3s ease;
+}
+
+
+ 
+#global #top .plane{
+  z-index:2000;
+  animation : trans1 1.3s ease-in infinite  0s backwards;
+}
+#global #middle .plane{
+  transform : translate3d(0px,0,0);  
+  background : #bbbbbb;
+  animation : trans2 1.3s linear infinite  0.3s  backwards;
+
+}
+#global #bottom .plane{
+  z-index:2000;
+  animation : trans3 1.3s ease-out infinite  0.7s backwards;
+}
+
+
+
+#global #top{
+  width:53px;
+  height:20px;
+  left:20px;
+  transform: skew(-15deg, 0);
+  z-index:100;
+}
+
+#global #middle{
+  width:33px;
+  height:20px;
+  left:20px;
+  top:15px;
+  
+  transform: skew(-15deg, 40deg)
+}
+#global #bottom{
+  width:53px;
+  height:20px;
+  top:30px;  
+  transform: skew(-15deg, 0)
+}
+@keyframes trans1{ 
+  from { 
+    transform : translate3d(53px,0,0)
+  }
+  to { 
+    transform : translate3d(-250px,0,0)
+  }
+}
+
+@keyframes trans2{ 
+  from { 
+    transform : translate3d(-160px,0,0)
+  }
+  to { 
+    transform : translate3d(53px,0,0)
+  }
+}
+
+@keyframes trans3{ 
+  from { 
+    transform : translate3d(53px,0,0)
+  }
+  to { 
+    transform : translate3d(-220px,0,0)
+  }
+}
+
+@keyframes animColor{ 
+  from { 
+    background : red;
+  }
+  25%{
+    background : yellow;
+  }
+  50%{
+    background : green;
+  }
+  75%{
+    background : brown;
+  }
+  to { 
+    background : blue;
+  }
+}
+#global p{
+  color:#fff;
+  position:absolute;
+  left: -3px;
+  top:55px;
+  font-family:Arial;
+  text-align:center;
+  font-size:10px;
+}
+
+.block-ui-visible>.block-ui-container{
+	background-color: black;
+	opacity: 0.7;
+}
+.redcolor{
+	color: #d9534f !important;
+}

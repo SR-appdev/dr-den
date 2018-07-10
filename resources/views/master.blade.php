@@ -15,12 +15,16 @@
   <link href="{{ asset('libraries/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
   <link href="{{ asset('libraries/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css')}}" rel="stylesheet">
   <link href="{{ asset('libraries/angular/angular-block-ui.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('libraries/fancybox/jquery.fancybox.min.css')}}" rel="stylesheet">
   <!-- <link href="{{ asset('libraries/datatables/css/jquery.dataTables.min.css')}}" rel="stylesheet"> -->
   <link href="{{ asset('libraries/select/css/bootstrap-select.min.css')}}" rel="stylesheet">
   <link href="{{ asset('libraries/datatables/css/dataTables.bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{ asset('libraries/datatables/css/responsive.bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{ asset('libraries/toast/ngToast.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('libraries/dropzone/dropzone.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('libraries/nprogress/nprogress.css')}}" rel="stylesheet">
   <link href="{{ asset('libraries/toast/ngToast-animations.css')}}" rel="stylesheet">
+  <link href="{{ asset('libraries/colorpicker/css/bootstrap-colorpicker.min.css')}}" rel="stylesheet">
   <link href="{{ asset('css/template.css')}}" rel="stylesheet">
   <link href="{{ asset('css/custom.css')}}" rel="stylesheet">
     <style>
@@ -81,6 +85,10 @@
 <script src="{{ asset('libraries/select/js/bootstrap-select.min.js')}}"></script>
 <script src="{{ asset('libraries/datatables/js/dataTables.bootstrap.min.js')}}"></script>
 <script src="{{ asset('libraries/datatables/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{ asset('libraries/dropzone/dropzone.min.js')}}"></script>
+<script src="{{ asset('libraries/nprogress/nprogress.js')}}"></script>
+<script src="{{ asset('libraries/fancybox/jquery.fancybox.min.js')}}"></script>
+<script src="{{ asset('libraries/colorpicker/bootstrap-colorpicker.min.js')}}"></script>
 <script src="{{ asset('js/custom.js')}}"></script>
 <script src="{{ asset('js/angular.js')}}"></script>
 <script src="{{ asset('js/service.js')}}"></script>
@@ -89,6 +97,7 @@
 <script src="{{ asset('js/controller/DashboardController.js')}}"></script>
 <script src="{{ asset('js/controller/PacientsController.js')}}"></script>
 <script src="{{ asset('js/controller/VisitsController.js')}}"></script>
+<script src="{{ asset('js/controller/OperationsController.js')}}"></script>
 
  <toast></toast>
 </body>

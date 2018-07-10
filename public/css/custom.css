@@ -47,137 +47,137 @@ button, .buttons, .btn, .modal-footer .btn+.btn {
 }
 
 #global {
-    width: 70px;
-    margin: auto;
-    margin-top: 50px;
-    position: relative;
-    cursor: pointer;
-    height: 60px;
-    position: absolute;
-    left: 50%;
-    margin-left: -35px;
-    top: 50%;
-    margin-top: -30px;
+	width: 70px;
+	margin: auto;
+	margin-top: 50px;
+	position: relative;
+	cursor: pointer;
+	height: 60px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	top: 50%;
+	margin-top: -30px;
 }
 
 #global .mask{
-  position:absolute;
-  border-radius:2px;
-  overflow:hidden;
-   perspective: 1000;
-  backface-visibility: hidden;
+	position:absolute;
+	border-radius:2px;
+	overflow:hidden;
+	perspective: 1000;
+	backface-visibility: hidden;
 }
 
 #global .plane{
-  background:#2e6da4;
-  width:400%;
-  height:100%;
-  position:absolute;
-  transform : translate3d(0px,0,0);
-  /*transition: all 0.8s ease; */
-  z-index:100;
-  perspective: 1000;
-  backface-visibility: hidden;
-  
+	background:#2e6da4;
+	width:400%;
+	height:100%;
+	position:absolute;
+	transform : translate3d(0px,0,0);
+	/*transition: all 0.8s ease; */
+	z-index:100;
+	perspective: 1000;
+	backface-visibility: hidden;
+	
 }
- 
+
 #global .animation{
-  transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 
- 
+
 #global #top .plane{
-  z-index:2000;
-  animation : trans1 1.3s ease-in infinite  0s backwards;
+	z-index:2000;
+	animation : trans1 1.3s ease-in infinite  0s backwards;
 }
 #global #middle .plane{
-  transform : translate3d(0px,0,0);  
-  background : #bbbbbb;
-  animation : trans2 1.3s linear infinite  0.3s  backwards;
+	transform : translate3d(0px,0,0);  
+	background : #bbbbbb;
+	animation : trans2 1.3s linear infinite  0.3s  backwards;
 
 }
 #global #bottom .plane{
-  z-index:2000;
-  animation : trans3 1.3s ease-out infinite  0.7s backwards;
+	z-index:2000;
+	animation : trans3 1.3s ease-out infinite  0.7s backwards;
 }
 
 
 
 #global #top{
-  width:53px;
-  height:20px;
-  left:20px;
-  transform: skew(-15deg, 0);
-  z-index:100;
+	width:53px;
+	height:20px;
+	left:20px;
+	transform: skew(-15deg, 0);
+	z-index:100;
 }
 
 #global #middle{
-  width:33px;
-  height:20px;
-  left:20px;
-  top:15px;
-  
-  transform: skew(-15deg, 40deg)
+	width:33px;
+	height:20px;
+	left:20px;
+	top:15px;
+	
+	transform: skew(-15deg, 40deg)
 }
 #global #bottom{
-  width:53px;
-  height:20px;
-  top:30px;  
-  transform: skew(-15deg, 0)
+	width:53px;
+	height:20px;
+	top:30px;  
+	transform: skew(-15deg, 0)
 }
 @keyframes trans1{ 
-  from { 
-    transform : translate3d(53px,0,0)
-  }
-  to { 
-    transform : translate3d(-250px,0,0)
-  }
+	from { 
+		transform : translate3d(53px,0,0)
+	}
+	to { 
+		transform : translate3d(-250px,0,0)
+	}
 }
 
 @keyframes trans2{ 
-  from { 
-    transform : translate3d(-160px,0,0)
-  }
-  to { 
-    transform : translate3d(53px,0,0)
-  }
+	from { 
+		transform : translate3d(-160px,0,0)
+	}
+	to { 
+		transform : translate3d(53px,0,0)
+	}
 }
 
 @keyframes trans3{ 
-  from { 
-    transform : translate3d(53px,0,0)
-  }
-  to { 
-    transform : translate3d(-220px,0,0)
-  }
+	from { 
+		transform : translate3d(53px,0,0)
+	}
+	to { 
+		transform : translate3d(-220px,0,0)
+	}
 }
 
 @keyframes animColor{ 
-  from { 
-    background : red;
-  }
-  25%{
-    background : yellow;
-  }
-  50%{
-    background : green;
-  }
-  75%{
-    background : brown;
-  }
-  to { 
-    background : blue;
-  }
+	from { 
+		background : red;
+	}
+	25%{
+		background : yellow;
+	}
+	50%{
+		background : green;
+	}
+	75%{
+		background : brown;
+	}
+	to { 
+		background : blue;
+	}
 }
 #global p{
-  color:#fff;
-  position:absolute;
-  left: -3px;
-  top:55px;
-  font-family:Arial;
-  text-align:center;
-  font-size:10px;
+	color:#fff;
+	position:absolute;
+	left: -3px;
+	top:55px;
+	font-family:Arial;
+	text-align:center;
+	font-size:10px;
 }
 
 .block-ui-visible>.block-ui-container{
@@ -186,4 +186,64 @@ button, .buttons, .btn, .modal-footer .btn+.btn {
 }
 .redcolor{
 	color: #d9534f !important;
+}
+.toothnotetitle {
+	background-color: #2a3f54;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 1px;
+}
+.toothnotetxt{
+	width: 100%;
+}
+.redfill{
+	fill: red !important;
+}
+.colsenote{
+	float: right;
+	cursor: pointer;
+}
+.dropzone {
+	min-height: 300px;
+	border: 1px solid #e5e5e5;
+}
+.imagescontainer{
+	display: block;
+	padding: 4px;
+	margin-bottom: 20px;
+	line-height: 1.42857143;
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	height: 139px;
+	overflow: hidden;
+	text-align: center;
+}
+.imagescontainer img{
+	max-width: 100%;
+	vertical-align: middle;
+	max-height: 100%;
+}
+.background-white{
+	background-color: white;
+}
+.background-white-padding{
+	background-color: white;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+ul#myTab li{
+	cursor: pointer;
+}
+textarea {
+	resize: none;
+}
+.colorop{
+	width: 80%;
+	height: 34px;
+}
+.colorwall{
+	width: 100% !important;
+	height: 30px !important;
 }

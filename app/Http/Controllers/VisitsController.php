@@ -8,6 +8,8 @@ use App\Modals\User;
 use App\Modals\Visits;
 use App\Modals\Operations;
 use App\Modals\VisitOperaton;
+use App\Modals\Toothnote;
+use App\Modals\Images;
 use Auth;
 class VisitsController  extends Controller
 {
@@ -25,7 +27,7 @@ class VisitsController  extends Controller
     public function getall(Request $request){
         $id = $request->id;
 
-        $Visits = Visits::where('is_deleted',0)->with(['operations','operations.name','images','patients']);
+        $Visits = Visits::where('is_deleted',0)->with(['operations','operations.name','vimages','patients','teeth']);
 
         if(isset($id) && $id > 0)
             $Visits = $Visits->where('customer_id',$id);
@@ -49,13 +51,20 @@ class VisitsController  extends Controller
 
         $input = $request->input('data');
         if(isset($input['operations'])) unset($input['operations']);
-        if(isset($input['images'])){
-            $imgs = $input['images'];
-            unset($input['images']);
+        if(isset($input['vimages'])){
+            unset($input['vimages']);
         } 
         if(isset($input['operations_id'])){
             $operations_id = $input['operations_id'];
             unset($input['operations_id']);
+        }
+        if(isset($input['teeth'])){
+            $teeth = $input['teeth'];
+            unset($input['teeth']);
+        }
+        if(isset($input['uploadedfile'])){
+            $uploadedfile = $input['uploadedfile'];
+            unset($input['uploadedfile']);
         }
         if(isset($input['patients'])) unset($input['patients']);
         if (isset($input['id']) && $input['id'] != '') {
@@ -76,6 +85,24 @@ class VisitsController  extends Controller
           $ops->visit_id = $items->id;
           $ops->operation_id = $value;
           $ops->save();
+
+        }
+
+          Toothnote::where('visit_id', $items->id)->delete();
+        foreach ($teeth as   $value) {
+          $teeths = new Toothnote();
+          $teeths->visit_id = $items->id;
+          $teeths->title = $value['title'];
+          $teeths->note = $value['note'];
+          $teeths->operations_id =isset($value['operations_id'])? implode(',', $value['operations_id']):'';
+          $teeths->save();
+
+        }
+          foreach ($uploadedfile as   $value) {
+          $uploadimg = new Images();
+          $uploadimg->visit_id = $items->id;
+          $uploadimg->url = $value;
+          $uploadimg->save();
 
         }
         

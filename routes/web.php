@@ -33,3 +33,10 @@ Route::get('/visits/all', 'VisitsController@getall');
 Route::get('/visits/operations', 'VisitsController@getoperations');
 Route::post('/visits/delete', 'VisitsController@delete');
 Route::post('/visits/submit', 'VisitsController@submit');
+Route::post('/upload/images', 'UploadController@uploadimages');
+
+
+//Operations
+Route::get('/operations/all', 'OperationsController@getoperations');
+Route::post('/operations/delete', 'OperationsController@deletepat');
+Route::post('/operations/submit', 'OperationsController@submit');

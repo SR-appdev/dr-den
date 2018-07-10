@@ -23,6 +23,11 @@ myApp.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function 
         templateUrl: 'views/visits',
         controller: "VisitsController"
     })
+     .state('operations', {
+        url: '/operations',
+        templateUrl: 'views/operations',
+        controller: "OperationsController"
+    })
 
 
 }]);

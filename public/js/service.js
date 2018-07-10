@@ -37,4 +37,23 @@ myApp.factory('Pacients', ['$resource', function ($resource) {
         }
     });
 
+}])
+.factory('Operations', ['$resource', function ($resource) {
+
+    return $resource('', {},
+    {
+        all: {
+            url: 'operations/all',
+            method: 'GET'
+        },
+        deleteoperations: {
+            url: 'operations/delete',
+            method: 'POST'
+        },
+        submit:{
+            url: 'operations/submit',
+            method: 'POST'
+        }
+    });
+
 }]);

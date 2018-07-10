@@ -13,11 +13,14 @@ protected $table = 'den_visit';
 		return $this->hasMany('App\Modals\VisitOperaton','visit_id');
 	}
 
-	public function images(){
+	public function vimages(){
 		return $this->hasMany('App\Modals\Images','visit_id');
 	}
 	public function patients(){
 		return $this->belongsTo('App\Modals\Pacients','customer_id');
+	}
+	public function teeth(){
+		return $this->hasMany('App\Modals\Toothnote','visit_id');
 	}
 }
 

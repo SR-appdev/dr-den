@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-  <title>Gentelella Alela! | </title>
+  <title data-ng-bind="'Dental Clinic&nbsp;| '+ state.current.data.title"></title>
 
   <!-- Bootstrap -->
   <link href="{{ asset('libraries/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -26,6 +26,9 @@
   <link href="{{ asset('libraries/toast/ngToast-animations.css')}}" rel="stylesheet">
   <link href="{{ asset('libraries/colorpicker/css/bootstrap-colorpicker.min.css')}}" rel="stylesheet">
   <link href="{{ asset('css/template.css')}}" rel="stylesheet">
+  <link href="{{ asset('libraries/fullcalendar/fullcalendar.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('libraries/fullcalendar/fullcalendar.print.min.css')}}" rel="stylesheet"  media='print'>
+  <link href="{{ asset('libraries/bootsrapdaterangepicker/daterangepicker.css')}}" rel="stylesheet">
   <link href="{{ asset('css/custom.css')}}" rel="stylesheet">
     <style>
     .my-animation.ng-enter {
@@ -41,7 +44,7 @@
   </style>
 </head>
 
-<body class="nav-md">
+<body class="nav-sm">
  
   <div class="container body">
     <div class="main_container">
@@ -61,7 +64,6 @@
       
     </div>
     <!-- /page content -->
-
     <!-- footer content -->
     @include('include.footer')
     <!-- /footer content -->
@@ -70,8 +72,12 @@
 
 <script src="{{ asset('libraries/jquery/dist/jquery.min.js')}}"></script>
 <script src="{{ asset('libraries/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-<script src="{{ asset('libraries/moment/min/moment.min.js')}}"></script>
+<script src="{{ asset('libraries/moment/moment.js')}}"></script>
+<script src="{{ asset('libraries/echarts/echarts.min.js')}}"></script>
 <script src="{{ asset('libraries/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js')}}"></script>
+<script src="{{ asset('libraries/bootsrapdaterangepicker/daterangepicker.js')}}"></script>
+
+
 <script src="{{ asset('libraries/angular/angular.min.js')}}"></script>
 <script src="{{ asset('libraries/angular/angular-animate.js')}}"></script>
 <script src="{{ asset('libraries/angular/angular-sanitize.min.js')}}"></script>
@@ -80,7 +86,6 @@
 <script src="{{ asset('libraries/angular/angular-ui-router.min.js')}}"></script>
 <script src="{{ asset('libraries/angular/angular-resource.js')}}"></script>
 <script src="{{ asset('libraries/angular/angular-block-ui.min.js')}}"></script>
-<script src="{{ asset('libraries/moment/min/moment.min.js')}}"></script>
 <script src="{{ asset('libraries/datatables/js/jquery.dataTables.min.js')}}"></script>
 <script src="{{ asset('libraries/select/js/bootstrap-select.min.js')}}"></script>
 <script src="{{ asset('libraries/datatables/js/dataTables.bootstrap.min.js')}}"></script>
@@ -89,8 +94,11 @@
 <script src="{{ asset('libraries/nprogress/nprogress.js')}}"></script>
 <script src="{{ asset('libraries/fancybox/jquery.fancybox.min.js')}}"></script>
 <script src="{{ asset('libraries/colorpicker/bootstrap-colorpicker.min.js')}}"></script>
+<script src="{{ asset('libraries/lodash/lodash.js')}}"></script>
+<script src="{{ asset('libraries/fullcalendar/fullcalendar.min.js')}}"></script>
 <script src="{{ asset('js/custom.js')}}"></script>
 <script src="{{ asset('js/angular.js')}}"></script>
+<script src="{{ asset('js/directives.js')}}"></script>
 <script src="{{ asset('js/service.js')}}"></script>
 <script src="{{ asset('js/filter.js')}}"></script>
 <script src="{{ asset('js/function.js')}}"></script>
@@ -98,6 +106,9 @@
 <script src="{{ asset('js/controller/PacientsController.js')}}"></script>
 <script src="{{ asset('js/controller/VisitsController.js')}}"></script>
 <script src="{{ asset('js/controller/OperationsController.js')}}"></script>
+<script src="{{ asset('js/controller/CalendarController.js')}}"></script>
+<script src="{{ asset('js/controller/GalleryController.js')}}"></script>
+<script src="{{ asset('js/controller/StatementController.js')}}"></script>
 
  <toast></toast>
 </body>

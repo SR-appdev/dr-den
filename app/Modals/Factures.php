@@ -5,9 +5,9 @@ use Illuminate\Database\Eloquent\Model;
 
 
 
-class Images extends Model
+class Factures extends Model
 {
-	protected $table = 'images';
+	protected $table = 'factures';
 
 	public function customer(){
 		return $this->belongsTo('App\Modals\Pacients','patient_id');

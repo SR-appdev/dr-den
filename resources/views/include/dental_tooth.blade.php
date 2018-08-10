@@ -1,6 +1,5 @@
 <div>
 						<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="289.61084" height="370.54398">      
-  <title id="title3476">Human Dental Arches</title>
   <metadata id="metadata8">
     <rdf:RDF>
       <cc:Work 
@@ -8,7 +7,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:title>Human Dental Arches</dc:title>
+        
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -125,59 +124,59 @@
     d="m 57.544054,96.877191 c 0.78275,-0.67 2.222159,-1.66864 4.62569,-3.14996"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-16 tooth-16-parent parenttooth"
+    class="tooth-16 tooth-16-parent toothwrp parenttooth"
     d="m 40.400929,101.93638 c 8.540214,-6.220469 14.83636,-2.627509 21.132851,0.9639 1.70039,1.7707 3.363687,3.5413 5.692529,5.31326 7.131417,5.75158 5.79007,9.65482 1.660196,12.94987 -2.573952,2.39643 -5.039142,4.74748 -6.337117,6.61203 -1.48762,1.28541 -2.855361,2.27152 -4.017065,2.7435 -5.497444,2.07161 -7.596361,-0.81763 -10.682339,-2.26609 -11.087339,-4.90405 -15.057835,-11.73539 -12.204887,-20.4145 0.31436,-3.34607 2.189645,-4.99871 4.755832,-5.90197 z"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-16"
+    class="tooth-16 toothwrp"
     d="m 41.71356,109.48273 c -1.793872,-6.97856 2.534794,-6.20622 4.883559,-7.94042 4.080457,-0.82336 7.498474,-2.828319 14.329591,1.25469 5.087701,5.94121 3.566612,9.2765 4.209478,13.4651 0.314098,3.99921 -1.116603,6.42981 -3.059932,7.43475 -0.483572,2.15731 -0.369384,4.22178 -4.634918,6.10614 -3.630005,2.71627 -6.181271,0.37991 -8.863197,-1.34468 -4.038369,-0.91091 -4.687008,-3.13754 -4.596452,-6.2283 -8.218179,-2.99932 -3.622847,-8.66354 -2.268129,-12.74728 z"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-16"
+    class="tooth-16 toothwrp "
     d="m 57.646425,102.99366 c -0.835531,0.82319 -1.950837,0.9361 -2.196631,3.25721 0.377749,2.37943 -1.179557,4.75452 -2.694602,7.12975 -1.566707,1.27953 -1.058127,4.7477 -1.480204,7.23439 1.534795,1.22758 3.073385,1.24141 4.612322,1.13147 l 2.90866,2.14709"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-16"
+    class="tooth-16 toothwrp"
     d="m 43.289755,110.40366 c 1.041394,0.9471 1.818882,2.04093 4.731337,1.94719 1.660625,-0.17834 3.320994,-0.2683 4.978341,0.62258"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-16"
+    class="tooth-16 toothwrp"
     d="m 61.629168,111.25942 c -3.1824,0.45917 -7.886313,0.27574 -8.751252,1.71372"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-16"
+    class="tooth-16 toothwrp"
     d="m 45.076555,121.72273 c 3.240786,1.23084 4.613615,-0.0607 6.31926,-0.90363"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-16"
+    class="tooth-16 toothwrp"
     d="m 47.737092,125.50026 1.469421,-3.76848"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-17 tooth-17-parent parenttooth"
+    class="tooth-17 toothwrp tooth-17-parent parenttooth"
     d="m 28.730841,143.70545 c -1.738504,-1.99931 -1.511164,-4.90954 -0.338594,-8.2577 4.474246,-8.60052 12.512518,-10.45413 25.03487,-3.81872 3.92789,1.33064 7.041725,3.88921 9.09019,6.4421 2.015003,2.51132 3.885891,3.72014 2.889861,8.1614 -2.299784,7.48128 -6.272087,13.34988 -17.529844,12.19412 -4.473038,-0.45662 -8.42318,0.5263 -14.080605,-3.19104 -2.190077,-3.04198 -6.410162,-2.83939 -5.065878,-11.53016 z"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-17"
+    class="tooth-17 toothwrp"
     d="m 51.953899,136.62079 c -1.14411,0.52177 -1.969033,0.51149 -2.795422,0.50354 -2.206896,-0.27489 -3.134363,0.70956 -3.408443,2.33709 -0.02932,1.02339 0.296331,2.14687 -1.587405,2.64692 -1.623112,1.24226 -0.813367,1.8099 -0.615265,2.54712 -0.04397,1.15672 -0.08702,1.93304 -0.129451,2.54814 -0.03708,4.15222 1.318064,4.06319 2.169292,5.50948 0.512891,0.46885 1.14687,0.90411 0.723758,1.63258 l 0.969465,0.71573"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-17"
+    class="tooth-17 toothwrp"
     d="m 44.438005,131.71125 c 0.463561,0.85049 0.914273,1.70099 1.692621,2.55219 0.864338,0.54275 1.229578,1.71024 1.448121,3.0613"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-17"
+    class="tooth-17 toothwrp"
     d="m 35.808271,133.42526 c 1.634924,0.0586 3.272954,0.11453 3.640267,1.23126 2.07132,1.28611 4.148849,2.57608 6.425514,3.98972"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-17"
+    class="tooth-17 toothwrp"
     d="m 32.74256,142.69487 4.735737,0.52011 c 1.781367,0.64501 3.647339,1.07868 6.073208,0.11535"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-17"
+    class="tooth-17 toothwrp"
     d="m 42.056984,155.15179 1.217504,-0.91476 c -0.337126,-2.61551 0.281241,-3.00781 1.223024,-2.64766"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path
-    class="tooth-17"
+    class="tooth-17 toothwrp"
     d="m 43.546071,145.06322 2.551524,-0.19829 c 1.131692,0.65507 2.264161,1.04481 3.396715,1.43462"
     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
   <path

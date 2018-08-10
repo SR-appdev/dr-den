@@ -42,7 +42,7 @@ myApp.controller('OperationsController', function ($scope, $rootScope,Operations
 
   $scope.deleteoperations = function(operationsid){
     $rootScope.startblockui();
-    Operations.deletepat({id:operationsid}, function (data) {
+    Operations.deleteoperations({id:operationsid}, function (data) {
       if(data.status =="success"){
         $scope.getall();
         $rootScope.toastalert('operations Deleted','success');

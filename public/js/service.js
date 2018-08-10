@@ -15,6 +15,18 @@ myApp.factory('Pacients', ['$resource', function ($resource) {
         submit:{
             url: 'pacients/submit',
             method: 'POST'
+        },
+        submitfacture:{
+            url: 'pacients/submitfacture',
+            method: 'POST'
+        },
+        getfactures:{
+            url: 'pacients/getfactures',
+            method: 'GET'
+        },
+        deletefacture:{
+            url: 'pacients/deletefacture',
+            method: 'POST'
         }
     });
 
@@ -38,6 +50,39 @@ myApp.factory('Pacients', ['$resource', function ($resource) {
     });
 
 }])
+.factory('Dashboard', ['$resource', function ($resource) {
+
+    return $resource('', {},
+    {
+        all: {
+            url: 'dashboard/all',
+            method: 'GET'
+        }
+    });
+
+}])
+.factory('Gallery', ['$resource', function ($resource) {
+
+    return $resource('', {},
+    {
+        all: {
+            url: 'gallery/all',
+            method: 'GET'
+        }
+    });
+
+}])
+.factory('Statment', ['$resource', function ($resource) {
+
+    return $resource('', {},
+    {
+        getinvoice: {
+            url: 'Statment/getinvoice',
+            method: 'POST'
+        }
+    });
+
+}])
 .factory('Operations', ['$resource', function ($resource) {
 
     return $resource('', {},
@@ -52,6 +97,37 @@ myApp.factory('Pacients', ['$resource', function ($resource) {
         },
         submit:{
             url: 'operations/submit',
+            method: 'POST'
+        }
+    });
+
+}])
+.factory('Calendar', ['$resource', function ($resource) {
+
+    return $resource('', {},
+    {
+        allpatient: {
+            url: 'calendar/patients',
+            method: 'GET'
+        },
+          submit: {
+            url: 'calendar/submit',
+            method: 'POSt'
+        },
+         allcalendar: {
+            url: 'calendar/allcalendar',
+            method: 'POST'
+        },
+         resize: {
+            url: 'calendar/resizecalendar',
+            method: 'POST'
+        },
+         drag: {
+            url: 'calendar/dragcalendar',
+            method: 'POST'
+        },
+         deletecal: {
+            url: 'calendar/deletecal',
             method: 'POST'
         }
     });
